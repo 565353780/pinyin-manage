@@ -2,6 +2,8 @@ from pinyin_sort.Module.info_manager import InfoManager
 
 def demo():
     data_folder_path = '/Users/fufu/Downloads/姑姑/'
+    need_sort = True
+
     def editInfoStrListFunc(info_str_list):
         dot_position = info_str_list[0].find('.')
         split_info = info_str_list[0][:(dot_position+1)]
@@ -31,7 +33,7 @@ def demo():
           len(panduan_info_manager) + len(danxuan_info_manager) + len(duoxuan_info_manager))
 
     info_manager.saveInfo(data_folder_path + 'all.txt', editInfoFunc)
-    panduan_info_manager.saveInfo(data_folder_path + 'panduan.txt', editInfoFunc)
-    danxuan_info_manager.saveInfo(data_folder_path + 'danxuan.txt', editInfoFunc)
-    duoxuan_info_manager.saveInfo(data_folder_path + 'duoxuan.txt', editInfoFunc)
+    panduan_info_manager.saveInfo(data_folder_path + 'panduan.txt', editInfoFunc, need_sort)
+    danxuan_info_manager.saveInfo(data_folder_path + 'danxuan.txt', editInfoFunc, need_sort)
+    duoxuan_info_manager.saveInfo(data_folder_path + 'duoxuan.txt', editInfoFunc, need_sort)
     return True
