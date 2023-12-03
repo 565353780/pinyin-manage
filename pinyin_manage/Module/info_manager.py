@@ -1,6 +1,6 @@
-from pinyin_sort.Data.info import Info
-from pinyin_sort.Method.io import loadSplitInfoStrLists
-from pinyin_sort.Method.sort import toPinyin, sortFunc
+from pinyin_manage.Data.info import Info
+from pinyin_manage.Method.io import loadSplitInfoStrLists
+from pinyin_manage.Method.sort import toPinyin, sortFunc
 
 class InfoManager(object):
     def __init__(self, txt_file_path: str=None, edit_info_str_list_func=None) -> None:

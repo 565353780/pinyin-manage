@@ -1,10 +1,10 @@
-# Pinyin Sort
+# Pinyin Manage
 
 ## Install
 
 ```bash
-conda create -n ps python=3.10
-conda activate ps
+conda create -n pm python=3.10
+conda activate pm
 ./setup.sh
 ```
 
