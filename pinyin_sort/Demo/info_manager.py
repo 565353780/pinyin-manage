@@ -1,4 +1,4 @@
-from pinyin_manage.Module.info_manager import InfoManager
+from pinyin_sort.Module.info_manager import InfoManager
 
 def demo():
     data_folder_path = '/Users/fufu/Downloads/姑姑/'
